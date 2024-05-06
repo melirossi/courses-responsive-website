@@ -1,0 +1,47 @@
+
+/* Marquee */
+.marquee {
+    background-color: #f3eceb;
+    --space: 2rem;
+    align-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    --duration: 50s;
+    --gap: var(--space);
+    display: flex;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.marquee__group {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-around;
+    --space: 2rem;
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .marquee {
+        display: none;
+    }
+}
