@@ -1,3 +1,15 @@
+/*Imports Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+/*Reseteo de página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 
 /* Marquee */
 .marquee {
@@ -17,7 +29,6 @@
     user-select: none;
     text-transform: uppercase;
 }
-
 .marquee__group {
     display: flex;
     align-items: center;
@@ -27,7 +38,6 @@
     min-width: 100%;
     animation: scroll var(--duration) linear infinite;
 }
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -37,11 +47,78 @@
         transform: translateX(calc(-100% - var(--gap)));
     }
 }
-
-
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .marquee {
         display: none;
     }
 }
+
+/*NavBar*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background-color: white;  
+}
+.navbar img {
+    margin-left: 40px;
+    width: 50px;
+}
+.collapse a {
+    color: grey;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.collapse i {
+    color: grey;
+    font-size: 20px;
+    margin: 7px 5px;
+}
+.collapse .fa-solid {
+    color: #af998a;
+    font-size: 19px;
+    margin: 7px 40px;
+}
+.collapse a:hover {
+    color: #af998a;
+}
+.collapse i:hover {
+    color: #af998a;
+}
+.collapse .fa-solid:hover {
+    color: grey;
+    cursor: pointer;
+}
+nav .collapse {
+    text-align: center;
+}
+@media only screen and (max-width: 1097px) and (min-width: 992px) {
+    .navbar img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
