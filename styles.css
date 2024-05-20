@@ -362,7 +362,7 @@ nav .collapse {
     z-index: 1;
     left: -10%;
 }
-.info button {
+.card button {
     margin-top: 20px;
     color: rgb(106, 87, 80);
     background-color: rgb(226, 211, 202);
@@ -371,7 +371,7 @@ nav .collapse {
     font-family: 'Dosis', sans-serif;
     margin-bottom: 30px;
 }
-.info .btn:hover {
+.card .btn:hover {
     transform: translateY(-0.25em);
     color: rgb(255, 255, 255);
     background-color: rgb(106, 87, 80);
