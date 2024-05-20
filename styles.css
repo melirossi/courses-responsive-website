@@ -116,13 +116,162 @@ nav .collapse {
 .header-image {
     width: 100%;
     height: auto;
-    opacity: 0.90;
     object-fit: cover;
 }
 @media (max-width: 450px) {
     .header-image {
-        height: 269px;
+        height: 310px;
         object-fit: cover;
+    }
+}
+
+/* Beneficios */
+.benefits-section {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 75%;
+    padding: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);    
+    background: linear-gradient(135deg, rgba(186, 167, 157, 1) 0%, rgba(210, 190, 180, 1) 100%);
+    color: #fcfcfc;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.benefits-section h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.benefits-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:#f3eceb;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+.benefits-text {
+    width: 45%;
+}
+.benefits-section ul {
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgb(106, 87, 80);
+    text-align: center;
+    margin-top: 50px;
+}
+.benefits-section ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.testimonials {
+    width: 45%;
+    color: rgb(106, 87, 80);
+}
+.testimonial {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.testimonial p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0 0 10px;
+}
+.testimonial span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(106, 87, 80);
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .benefits-section {
+        width: 90%;
+        padding: 20px;
+    }
+    .benefits-section h2 {
+        font-size: 1.5rem;
+    }
+    .benefits-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .benefits-text, .testimonials {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .benefits-section ul {
+        font-size: 1rem;
+    }
+}
+
+/* Sección de Llamada a la Acción (CTA) */
+.cta-section {
+    background-color: #f3eceb;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(203, 179, 179, 0.3);
+    margin: 50px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.cta-section h2 {
+    color: rgb(106, 87, 80);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #8c7c6f;
+    line-height: 1.6;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(106, 87, 80);
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #8c7c6f;
+    transform: scale(1.05);    
+}
+@media (max-width: 768px) {
+    .cta-section {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+    .cta-section p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
