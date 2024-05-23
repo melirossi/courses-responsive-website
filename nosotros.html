@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Vinculación de CSS para usar Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--Vinculación con CSS-->
+    <link rel="stylesheet" href="styles.css">
+ 
+    <!--Imagen y texto en la pestaña del navegador-->
+    <link rel="icon" href="./Images/logo0.png">
+    <title>Sobre nosotros</title>
+</head>
+<body>  
+    <!--Marquee--> 
+    <section class="marquee">
+        <div class="marquee">
+            <div class="marquee__group">
+                <p>Suscribite a nuestros newsletters y obtené un 10% off</p>
+                <p>6 cuotas sin interés</p>
+            </div>
+            <div class="marquee__group">
+                <p>Suscribite a nuestros newsletters y obtené un 10% off</p>
+                <p>6 cuotas sin interés</p>
+            </div>
+        </div>  
+    </section>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img class="img-fluid" src="./Images/logo1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="cursos.html">Cursos disponibles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="careers.html">Trabaja con nosotros</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">              
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa fa-user-lock"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="header">
+        <img src="./Images/headernosotros.png" alt="header skill bridge" class="header-image">
+        <div class="header-content">
+            <h2>Educacion, accesibilidad y excelencia</h2>
+            <p>En Skill Bridge, estamos comprometidos con tu éxito. Somos una plataforma de cursos en línea que ofrece acceso a una amplia gama de cursos impartidos por expertos en sus campos. Nuestra misión es proporcionar educación de alta calidad y accesible para ayudarte a alcanzar tus metas profesionales y personales. Únete a nosotros y comienza tu viaje de aprendizaje hoy mismo.</p>
+        </div>
+    </header>
+
+    <!--Profesores-->
+    <section class="docentes">
+        <div class="nuestrosDocentes-content container">
+            <h2>Nuestros profesores</h2>
+            <div class="docente-container">
+                <div class="docente">
+                    <img src="./Images/docente1.jpg" alt="fotografía docente">
+                    <div class="docente-info">
+                        <h3>Profesor Alejandro Cruz</h3>
+                        <p> es un educador apasionado con una larga experiencia en cursos en línea de informática. Su enfoque interactivo y práctico ha inspirado a numerosos estudiantes a desarrollar habilidades digitales sólidas.</p>
+                    </div>
+                </div>            
+                <div class="docente">
+                    <img src="./Images/docente2.jpg" alt="fotografía docente">
+                    <div class="docente-info">
+                        <h3>Directora Gabriela</h3>
+                        <p>es una líder visionaria con una amplia trayectoria en la educación en línea. Su compromiso con la excelencia académica y la innovación ha llevado a la institución a nuevas alturas.</p>
+                    </div>
+                </div>            
+                <div class="docente">
+                    <img src="./Images/docente3.jpg" alt="fotografía docente">
+                    <div class="docente-info">
+                        <h3>Profesora Ana Gomez</h3>
+                        <p>es una líder visionaria con una amplia trayectoria en la educación en línea. Su compromiso con la excelencia académica y la innovación ha llevado a la institución a nuevas alturas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Preguntas frecuentes-->
+    <div class="preguntas-container">
+        <h3>Preguntas Frecuentes</h3>
+        <ul class="PreguntasAcordeon">
+            <li>
+                <label for="primera"> ¿Qué tipo de material de estudio se proporciona en los cursos? <span>&#x3e;</span></label>
+                <input type="radio" name="Acordeon" id="primera" checked>
+                <div class="content">
+                    <p>Nuestros cursos incluyen una variedad de materiales de estudio, que pueden incluir videos tutoriales, lecturas complementarias, cuestionarios interactivos, proyectos prácticos y recursos descargables. Estos materiales están diseñados para brindarte una experiencia de aprendizaje completa y enriquecedora.</p>
+                </div>
+            </li>
+            <li>
+                <label for="segunda">  ¿Qué tipo de soporte técnico ofrecen si tengo problemas para acceder al curso? <span>&#x3e;</span></label>
+                <input type="radio" name="Acordeon" id="segunda">
+                <div class="content">
+                    <p>Contamos con un equipo de soporte técnico dedicado que está disponible para ayudarte con cualquier problema que puedas enfrentar al acceder al curso. Puedes ponerte en contacto con nuestro equipo de soporte enviando un correo electrónico a support@ejemplo.com y te responderemos lo antes posible para resolver cualquier inconveniente que puedas tener.</p>
+                </div>
+            </li>
+            <li>
+                <label for="tercera"> ¿Recibo un certificado al completar un curso?<span>&#x3e;</span></label>
+                <input type="radio" name="Acordeon" id="tercera">
+                <div class="content">
+                    <p> Sí, al completar exitosamente un curso, recibirás un certificado de finalización que puedes descargar e imprimir. Este certificado te ayudará a demostrar tus habilidades y conocimientos adquiridos durante el curso.</p>
+                </div>
+            </li>
+            <li>
+                <label for="cuarta">  ¿Cuál es la política de reembolso si no estoy satisfecho con un curso?<span>&#x3e;</span></label>
+                <input type="radio" name="Acordeon" id="cuarta">
+                <div class="content">
+                    <p> Entendemos que puede haber ocasiones en las que un curso no cumpla con tus expectativas. Por lo tanto, ofrecemos una política de reembolso completo dentro de los primeros 30 días posteriores a la compra del curso, si no estás satisfecho por cualquier motivo. Simplemente contáctanos dentro de este período y te ayudaremos a procesar tu reembolso.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Ubicación-->
+    <div class="map-container">
+        <div class="map-wrapper">
+            <h4>Oficina en Avenida de Mayo</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.806789282526!2d-58.381093!3d-34.609046899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad0457fa6a3%3A0x30fde298fbcd7cf!2sAv.%20de%20Mayo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716126914440!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-wrapper">
+            <h4>Oficina en Ramos Mejia</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9386182112694!2d-58.55052722417047!3d-34.656253072935435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8eebd2bcf07%3A0x712c7591d6c812e4!2sAv.%20Gral.%20San%20Mart%C3%ADn%2C%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716130527221!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="./Images/logo2.png" alt="Logo" class="footer-logo">            
+            </div>
+            <div class="footer-section">
+                <h6 class="footer-heading">Navegación</h6>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="cursos.html">Cursos disponibles</a></li>
+                    <li><a href="careers.html">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="newsletter">
+                <h6 class="footer-heading">Newsletter</h6>
+                <p class="footer-text">Suscríbete a nuestro boletín para mantenerte informado sobre los próximos eventos y actividades que llevaremos a cabo en Skill Bridge.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Ingresa tu correo electrónico" aria-describedby="button-addon1" class="footer-input">
+                    <button id="button-addon1" type="submit" class="footer-button"><i class="fa fa-paper-plane fa-shake"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-author">
+            <p>Daniela Vera - Liliana Vera - Melisa Rossi para CAC 4.0 &copy;</p>
+        </div>
+    </footer>
+
+    <!--Vinculación para íconos-->
+    <script src="https://kit.fontawesome.com/e6da6f019e.js" crossorigin="anonymous"></script>
+            
+    <!--Vinculación de JavaScript Bundle with Popper para usar Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+            
+    <!--Vinculación con JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
