@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Vinculación de CSS para usar Bootstrap-->
+    <!-- Vinculación de CSS para usar Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <!--Vinculación con CSS-->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Vinculación con CSS -->
+    <link rel="stylesheet" href="../styles.css">
  
-    <!--Imagen y texto en la pestaña del navegador-->
-    <link rel="icon" href="./Images/logo0.png">
-    <title>Skill bridge</title>
+    <!-- Imagen y texto en la pestaña del navegador -->
+    <link rel="icon" href="../Images/logo0.png">
+    <title>Cursos disponibles</title>
 </head>
 <body>  
-    <!--Marquee--> 
+    <!-- Marquee --> 
     <section class="marquee">
         <div class="marquee">
             <div class="marquee__group">
@@ -29,11 +29,11 @@
         </div>  
     </section>
 
-    <!--NavBar-->
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img class="img-fluid" src="./Images/logo1.png" alt="Logo">
+                <img class="img-fluid" src="../Images/logo1.png" alt="Logo">
             </a>
             <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,16 +41,16 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="nosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" aria-current="page" href="../nosotros.html">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./cursos/cursos.html">Cursos disponibles</a>
+                        <a class="nav-link" aria-current="page" href="cursos.html">Cursos disponibles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="careers.html">Trabaja con nosotros</a>
+                        <a class="nav-link" aria-current="page" href="../careers.html">Trabaja con nosotros</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">              
@@ -64,60 +64,31 @@
     
     <!-- Header -->
     <header class="header">
-        <img src="./Images/header1.png" alt="header skill bridge" class="header-image">
+        <img src="../Images/headercursos.png" alt="header skill bridge" class="header-image">
     </header>
 
-    <!-- Beneficios -->
-    <section class="benefits-section">
-        <h2>¿Por qué elegir Skill Bridge?</h2>
-        <div class="benefits-content">
-            <div class="benefits-text">
-                <ul>
-                    <li>● Acceso a cursos de alta calidad en línea.</li>
-                    <li>● Flexibilidad para aprender a tu propio ritmo.</li>
-                    <li>● Certificaciones reconocidas.</li>
-                    <li>● Soporte continuo de nuestros expertos.</li>
-                    <li>● Actualizaciones regulares de contenido.</li>
-                    <li>● Comunidad activa de estudiantes y profesionales.</li>
-                </ul>
-            </div>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p>"Gracias a Skill Bridge, pude aprender nuevas habilidades que me ayudaron a avanzar en mi carrera profesional."</p>
-                    <span>- Juan Pérez</span>
-                </div>
-                <div class="testimonial">
-                    <p>"La flexibilidad de los cursos me permitió estudiar a mi propio ritmo y obtener una certificación reconocida."</p>
-                    <span>- María López</span>
-                </div>
-                <div class="testimonial">
-                    <p>"El soporte continuo de los expertos de Skill Bridge fue fundamental para completar mi formación con éxito."</p>
-                    <span>- Carlos García</span>
-                </div>
+    <!-- Cursos -->
+    <section class="courses">  
+        <div id="cards-section">
+            <div class="cards-container">                                    
+                <!-- Las tarjetas se cargarán dinámicamente -->
             </div>
         </div>
-    </section>
-   
-    <!--Explorar cursos-->
-    <section class="cta-section">
-        <h2>Empieza tu Viaje de Aprendizaje Hoy</h2>
-        <p>¡No esperes más! Explora nuestros cursos y cruza el puente hacia un futuro lleno de oportunidades.</p>
-        <a href="cursos.html" class="cta-button">Ver Cursos</a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <img src="./Images/logo2.png" alt="Logo" class="footer-logo">            
+                <img src="../Images/logo2.png" alt="Logo" class="footer-logo">            
             </div>
             <div class="footer-section">
                 <h6 class="footer-heading">Navegación</h6>
                 <ul class="footer-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./cursos/cursos.html">Cursos disponibles</a></li>
-                    <li><a href="careers.html">Trabaja con nosotros</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="cursos.html">Cursos disponibles</a></li>
+                    <li><a href="../careers.html">Trabaja con nosotros</a></li>
                 </ul>
             </div>
             <div class="footer-section" id="newsletter">
@@ -134,14 +105,13 @@
         </div>
     </footer>
 
-    <!--Vinculación para íconos-->
+    <!-- Vinculación para íconos -->
     <script src="https://kit.fontawesome.com/e6da6f019e.js" crossorigin="anonymous"></script>
             
-    <!--Vinculación de JavaScript Bundle with Popper para usar Bootstrap-->
+    <!-- Vinculación de JavaScript Bundle with Popper para usar Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
             
-    <!--Vinculación con JavaScript-->
-    <script src="script.js"></script>
+    <!-- Vinculación con JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
-                  
