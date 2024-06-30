@@ -12,7 +12,7 @@
  
     <!--Imagen y texto en la pestaña del navegador-->
     <link rel="icon" href="./Images/logo0.png">
-    <title>Skill bridge</title>
+    <title>Nuevo curso</title>
 </head>
 <body>  
     <!--Marquee--> 
@@ -61,49 +61,65 @@
             </div>
         </div>
     </nav>
-    
-    <!-- Header -->
-    <header class="header">
-        <img src="./Images/header1.png" alt="header skill bridge" class="header-image">
-    </header>
-
-    <!-- Beneficios -->
-    <section class="benefits-section">
-        <h2>¿Por qué elegir Skill Bridge?</h2>
-        <div class="benefits-content">
-            <div class="benefits-text">
-                <ul>
-                    <li>● Acceso a cursos de alta calidad en línea.</li>
-                    <li>● Flexibilidad para aprender a tu propio ritmo.</li>
-                    <li>● Certificaciones reconocidas.</li>
-                    <li>● Soporte continuo de nuestros expertos.</li>
-                    <li>● Actualizaciones regulares de contenido.</li>
-                    <li>● Comunidad activa de estudiantes y profesionales.</li>
-                </ul>
-            </div>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p>"Gracias a Skill Bridge, pude aprender nuevas habilidades que me ayudaron a avanzar en mi carrera profesional."</p>
-                    <span>- Juan Pérez</span>
-                </div>
-                <div class="testimonial">
-                    <p>"La flexibilidad de los cursos me permitió estudiar a mi propio ritmo y obtener una certificación reconocida."</p>
-                    <span>- María López</span>
-                </div>
-                <div class="testimonial">
-                    <p>"El soporte continuo de los expertos de Skill Bridge fue fundamental para completar mi formación con éxito."</p>
-                    <span>- Carlos García</span>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <!--Explorar cursos-->
-    <section class="cta-section">
-        <h2>Empieza tu Viaje de Aprendizaje Hoy</h2>
-        <p>¡No esperes más! Explora nuestros cursos y cruza el puente hacia un futuro lleno de oportunidades.</p>
-        <a href="./cursos/cursos.html" class="cta-button">Ver Cursos</a>
-    </section>
+  
+    <!--Formulario-->
+    <section class="container-form">
+        <h3>Cargar un nuevo curso:</h3>     
+        <form id="coursesForm" action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="titulo">Título del curso:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>            
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" required>
+            </div>            
+            <div class="form-group">
+                <label for="duracion">Duración en horas:</label>
+                <input type="text" id="duracion" name="duracion" required>
+            </div>    
+            <div class="form-group">
+                <label for="lenguaje">Lenguaje:</label>
+                <input type="text" id="lenguaje" name="lenguaje" required>
+            </div>     
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" required>
+            </div>      
+            <div class="form-group">
+                <label for="foto">Adjuntar foto de portada:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+            </div>  
+            <div class="form-group">
+                <label for="materia">Categoría:</label>
+                <select id="materia" name="materia" required>
+                    <option value="0" disabled selected>Seleccione una especialidad</option>
+                    <option value="1">Programación Web</option>
+                    <option value="2">Ciencia de datos</option>
+                    <option value="3">Idiomas</option>
+                    <option value="4">Artes plásticas</option>
+                    <option value="5">Marketing y estrategias digitales</option>
+                    <option value="6">Literatura y narración de historia</option>
+                    <option value="7">Otra especialidad</option>
+                </select>
+            </div>                
+            <div class="form-group">
+                <label for="level">Nivel:</label>
+                <select id="level" name="level" required>
+                    <option value="0" disabled selected>Seleccione un nivel</option>
+                    <option value="1">Principiantes</option>
+                    <option value="2">Intermedios</option>
+                    <option value="3">Avanzados</option>
+                    <option value="4">Todos los niveles</option>    
+                </select>
+            </div> 
+            <div class="form-group">
+                <label for="profesor">Nombre del docente a cargo:</label>
+                <input type="text" id="profesor" name="profesor" required>
+            </div>   
+            <input type="submit" value="Enviar">
+        </form>
+    </section>    
 
     <!-- Footer -->
     <footer class="footer">
@@ -144,4 +160,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-                  

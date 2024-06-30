@@ -767,14 +767,42 @@ input[type="submit"]:hover {
     }
 }
 
-
-
-
-
-
-
-
-
+/* Login */
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+.logo {
+    height: 35px;
+}
+span, h3 {
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+label {
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+form .button-login {
+    background-color: #f3eceb;    
+    border-radius: 4px;
+}
+form .button-login button, a {
+    text-transform: uppercase;
+}
+.button-login button:hover, a:hover {
+    transform: translateY(-0.25em);
+    font-weight: bold;
+}
 
 
 
