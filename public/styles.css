@@ -513,6 +513,10 @@ iframe {
     overflow: hidden;
     z-index: 99;
 }
+#cards-section .card h6 {
+    margin-top: 2px;
+    text-transform: uppercase;
+}
 #cards-section .card p {
     font-size: 17px;
     color: rgb(70, 69, 69);
@@ -522,7 +526,7 @@ iframe {
     font-weight: 500;
 }
 #cards-section .card span {
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(106, 87, 80);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;

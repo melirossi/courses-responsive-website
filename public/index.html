@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="styles.css">
  
     <!--Imagen y texto en la pestaña del navegador-->
-    <link rel="icon" href="./Images/logo0.png">
-    <title>Trabaja con nosotros</title>
+    <link rel="icon" href="../Images/logo0.png">
+    <title>Skill bridge</title>
 </head>
 <body>  
     <!--Marquee--> 
@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img class="img-fluid" src="./Images/logo1.png" alt="Logo">
+                <img class="img-fluid" src="../Images/logo1.png" alt="Logo">
             </a>
             <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
                         <a class="nav-link" aria-current="page" href="nosotros.html">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./cursos/cursos.html">Cursos disponibles</a>
+                        <a class="nav-link" aria-current="page" href="cursos.html">Cursos disponibles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="careers.html">Trabaja con nosotros</a>
@@ -61,76 +61,62 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Header -->
     <header class="header">
-        <img src="./Images/headercareer.png" alt="header skill bridge" class="header-image">        
-    </header>    
+        <img src="../Images/headerhome.png" alt="header skill bridge" class="header-image">
+    </header>
 
-    <!--Formulario-->
-    <section class="container-form">
-        <h3>¡Se parte de nuestro equipo! Completá el formulario y nos pondremos en contacto contigo:</h3>     
-        <form id="professorForm" action="" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>            
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>            
-            <div class="form-group">
-                <label for="materia">Especialidad:</label>
-                <select id="materia" name="materia" required>
-                    <option value="" disabled selected>Seleccione una especialidad</option>
-                    <option value="frontend">Programación Web</option>
-                    <option value="datos">Ciencia de datos</option>
-                    <option value="idiomas">Idiomas</option>
-                    <option value="artess">Artes plásticas</option>
-                    <option value="marketing">Marketing y estrategias digitales</option>
-                    <option value="literatura">Literatura y narración de historia</option>
-                    <option value="otro">Otra especialidad</option>
-                </select>
-            </div>                        
-            <div class="form-group">
-                <label for="fecha_inicio">Fecha que puedes empezar:</label>
-                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
-            </div>            
-            <div class="form-group">
-                <label for="curriculum">Adjuntar curriculum:</label>
-                <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required>
-            </div>            
-            <div class="form-group">
-                <label for="foto">Adjuntar foto de perfil:</label>
-                <input type="file" id="foto" name="foto" accept="image/*" required>
-            </div>            
-            <div id="preview-container">
-                <img id="foto-preview" src="" alt="Vista previa de la foto" style="display: none; max-width: 100px; margin-top: 10px;">
-            </div>            
-            <div class="checkbox-container">
-                <input type="checkbox" id="terminos" name="terminos" required>
-                <label for="terminos">He leído y acepto los <a href="" target="_blank">términos y condiciones</a>.</label>
-            </div>            
-            <input type="submit" value="Enviar">
-        </form>
-    </section>    
+    <!-- Beneficios -->
+    <section class="benefits-section">
+        <h2>¿Por qué elegir Skill Bridge?</h2>
+        <div class="benefits-content">
+            <div class="benefits-text">
+                <ul>
+                    <li>● Acceso a cursos de alta calidad en línea.</li>
+                    <li>● Flexibilidad para aprender a tu propio ritmo.</li>
+                    <li>● Certificaciones reconocidas.</li>
+                    <li>● Soporte continuo de nuestros expertos.</li>
+                    <li>● Actualizaciones regulares de contenido.</li>
+                    <li>● Comunidad activa de estudiantes y profesionales.</li>
+                </ul>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Gracias a Skill Bridge, pude aprender nuevas habilidades que me ayudaron a avanzar en mi carrera profesional."</p>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="testimonial">
+                    <p>"La flexibilidad de los cursos me permitió estudiar a mi propio ritmo y obtener una certificación reconocida."</p>
+                    <span>- María López</span>
+                </div>
+                <div class="testimonial">
+                    <p>"El soporte continuo de los expertos de Skill Bridge fue fundamental para completar mi formación con éxito."</p>
+                    <span>- Carlos García</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!--Explorar cursos-->
+    <section class="cta-section">
+        <h2>Empieza tu Viaje de Aprendizaje Hoy</h2>
+        <p>¡No esperes más! Explora nuestros cursos y cruza el puente hacia un futuro lleno de oportunidades.</p>
+        <a href="cursos.html" class="cta-button">Ver Cursos</a>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <img src="./Images/logo2.png" alt="Logo" class="footer-logo">            
+                <img src="../Images/logo2.png" alt="Logo" class="footer-logo">            
             </div>
             <div class="footer-section">
                 <h6 class="footer-heading">Navegación</h6>
                 <ul class="footer-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./cursos/cursos.html">Cursos disponibles</a></li>
+                    <li><a href="cursos.html">Cursos disponibles</a></li>
                     <li><a href="careers.html">Trabaja con nosotros</a></li>
                 </ul>
             </div>
@@ -158,3 +144,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+                  

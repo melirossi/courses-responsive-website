@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="styles.css">
  
     <!--Imagen y texto en la pestaña del navegador-->
-    <link rel="icon" href="./Images/logo0.png">
-    <title>Nuevo curso</title>
+    <link rel="icon" href="../Images/logo0.png">
+    <title>Trabaja con nosotros</title>
 </head>
 <body>  
     <!--Marquee--> 
@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img class="img-fluid" src="./Images/logo1.png" alt="Logo">
+                <img class="img-fluid" src="../Images/logo1.png" alt="Logo">
             </a>
             <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
                         <a class="nav-link" aria-current="page" href="nosotros.html">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./cursos/cursos.html">Cursos disponibles</a>
+                        <a class="nav-link" aria-current="page" href="cursos.html">Cursos disponibles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="careers.html">Trabaja con nosotros</a>
@@ -61,62 +61,59 @@
             </div>
         </div>
     </nav>
-  
+
+    <!-- Header -->
+    <header class="header">
+        <img src="../Images/headercareer.png" alt="header skill bridge" class="header-image">        
+    </header>    
+
     <!--Formulario-->
     <section class="container-form">
-        <h3>Cargar un nuevo curso:</h3>     
-        <form id="coursesForm" action="" method="post" enctype="multipart/form-data">
+        <h3>¡Se parte de nuestro equipo! Completá el formulario y nos pondremos en contacto contigo:</h3>     
+        <form id="professorForm" action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="titulo">Título del curso:</label>
-                <input type="text" id="titulo" name="titulo" required>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>            
             <div class="form-group">
-                <label for="descripcion">Descripción:</label>
-                <input type="text" id="descripcion" name="descripcion" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>            
             <div class="form-group">
-                <label for="duracion">Duración en horas:</label>
-                <input type="text" id="duracion" name="duracion" required>
-            </div>    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>            
             <div class="form-group">
-                <label for="lenguaje">Lenguaje:</label>
-                <input type="text" id="lenguaje" name="lenguaje" required>
-            </div>     
-            <div class="form-group">
-                <label for="precio">Precio:</label>
-                <input type="text" id="precio" name="precio" required>
-            </div>      
-            <div class="form-group">
-                <label for="foto">Adjuntar foto de portada:</label>
-                <input type="file" id="foto" name="foto" accept="image/*" required>
-            </div>  
-            <div class="form-group">
-                <label for="materia">Categoría:</label>
+                <label for="materia">Especialidad:</label>
                 <select id="materia" name="materia" required>
-                    <option value="0" disabled selected>Seleccione una especialidad</option>
-                    <option value="1">Programación Web</option>
-                    <option value="2">Ciencia de datos</option>
-                    <option value="3">Idiomas</option>
-                    <option value="4">Artes plásticas</option>
-                    <option value="5">Marketing y estrategias digitales</option>
-                    <option value="6">Literatura y narración de historia</option>
-                    <option value="7">Otra especialidad</option>
+                    <option value="" disabled selected>Seleccione una especialidad</option>
+                    <option value="1">Programación</option>
+                    <option value="2">Idiomas</option>
+                    <option value="3">Marketing</option>
+                    <option value="4">Arte</option>
+                    <option value="5">Literatura</option>                    
+                    <option value="6">Otra especialidad</option>
                 </select>
-            </div>                
+            </div>                        
             <div class="form-group">
-                <label for="level">Nivel:</label>
-                <select id="level" name="level" required>
-                    <option value="0" disabled selected>Seleccione un nivel</option>
-                    <option value="1">Principiantes</option>
-                    <option value="2">Intermedios</option>
-                    <option value="3">Avanzados</option>
-                    <option value="4">Todos los niveles</option>    
-                </select>
-            </div> 
+                <label for="fecha_inicio">Fecha que puedes empezar:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+            </div>            
             <div class="form-group">
-                <label for="profesor">Nombre del docente a cargo:</label>
-                <input type="text" id="profesor" name="profesor" required>
-            </div>   
+                <label for="curriculum">Adjuntar curriculum:</label>
+                <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required>
+            </div>            
+            <div class="form-group">
+                <label for="foto">Adjuntar foto de perfil:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+            </div>            
+            <div id="preview-container">
+                <img id="foto-preview" src="" alt="Vista previa de la foto" style="display: none; max-width: 100px; margin-top: 10px;">
+            </div>            
+            <div class="checkbox-container">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">He leído y acepto los <a href="" target="_blank">términos y condiciones</a>.</label>
+            </div>            
             <input type="submit" value="Enviar">
         </form>
     </section>    
@@ -125,14 +122,14 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <img src="./Images/logo2.png" alt="Logo" class="footer-logo">            
+                <img src="../Images/logo2.png" alt="Logo" class="footer-logo">            
             </div>
             <div class="footer-section">
                 <h6 class="footer-heading">Navegación</h6>
                 <ul class="footer-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./cursos/cursos.html">Cursos disponibles</a></li>
+                    <li><a href="cursos.html">Cursos disponibles</a></li>
                     <li><a href="careers.html">Trabaja con nosotros</a></li>
                 </ul>
             </div>

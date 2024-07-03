@@ -1,12 +1,15 @@
 import express from 'express';
-import pool from './config/db.js';
+import cors from 'cors';
+import pool from '../config/db.js';
 
 // Create an Express app
 const app = express();
 
 // Enable JSON parsing for request bodies
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 // Read all resources
 app.get('/courses', async (req, res) => {
