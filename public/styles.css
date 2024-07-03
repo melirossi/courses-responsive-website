@@ -363,7 +363,7 @@ h3 {
     text-transform: uppercase;
 }
 .preguntas-container {
-    background: url("./Images/fondo.jpg") no-repeat center center;
+    background: url("https://raw.githubusercontent.com/melirossi/courses-responsive-website/master/Images/fondo.jpg") no-repeat center center;
     background-size: cover;
     padding: 50px 20px;
 }
