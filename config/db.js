@@ -1,12 +1,11 @@
 import { createPool } from "mysql2/promise";
 
-// Create connection pool
+// Create a connection pool
 const pool = createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'melisa',
-    database: 'skill_bridge',
-    port: 3307,
+    host: 'br0nttbzusolrkjz2drq-mysql.services.clever-cloud.com',
+    user: 'unyu9w8seqxx6enb',
+    password: 'pC47CwcDBFgsmKILjqrl',
+    database: 'br0nttbzusolrkjz2drq',
     connectionLimit: 5 // Adjust the connection limit as per your requirements
 });
 
